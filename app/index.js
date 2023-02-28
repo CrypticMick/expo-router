@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Link } from "expo-router";
+import { Link, Stack } from "expo-router";
 
 const users = [
   {
@@ -16,6 +16,7 @@ const users = [
 export default function Page() {
   return (
     <View style={styles.container}>
+      <Stack.Screen options={{ title: "Home" }} />
       <View style={styles.main}>
         <Text style={styles.title}>Hello World</Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
