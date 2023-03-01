@@ -16,7 +16,6 @@ const users = [
 export default function Page() {
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: "Home" }} />
       <View style={styles.main}>
         <Text style={styles.title}>Hello World</Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>

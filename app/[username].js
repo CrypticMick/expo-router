@@ -16,6 +16,7 @@ const profile = () => {
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Stack.Screen
         options={{
+          title: username,
           headerStyle: { backgroundColor: "#1E2632" },
           headerTintColor: "#FFE030",
         }}
