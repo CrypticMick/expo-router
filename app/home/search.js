@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Link, Redirect, Stack } from "expo-router";
+import { Link } from "expo-router";
 
 const users = [
   {
@@ -15,23 +15,22 @@ const users = [
 
 export default function Page() {
   return (
-    <Redirect href={"/home"} />
-    //   <View style={styles.container}>
-    //     <View style={styles.main}>
-    //       <Text style={styles.title}>Hello World</Text>
-    //       <Text style={styles.subtitle}>This is the first page of your app.</Text>
+    <View style={styles.container}>
+      <View style={styles.main}>
+        <Text style={styles.title}>Hello World</Text>
+        <Text style={styles.subtitle}>This is the first page of your app.</Text>
 
-    //       {users.map((user) => (
-    //         <Link
-    //           key={user.username}
-    //           href={`/${user.username}`}
-    //           style={styles.link}
-    //         >
-    //           Open {user.name}'s Dynamic Profile
-    //         </Link>
-    //       ))}
-    //     </View>
-    //   </View>
+        {users.map((user) => (
+          <Link
+            key={user.username}
+            href={`/${user.username}`}
+            style={styles.link}
+          >
+            Open {user.name}'s Dynamic Profile
+          </Link>
+        ))}
+      </View>
+    </View>
   );
 }
 
